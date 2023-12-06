@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="466.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rummikubfrontscreen.GameBoardController">
+   <children>
+      <Pane fx:id="Pane" onMouseClicked="#handlePaneClick" prefHeight="581.0" prefWidth="519.0" style="-fx-background-color: GRAY;" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="255.0" layoutY="327.0" stroke="WHITE" strokeType="INSIDE" width="343.0" />
+         </children></Pane>
+      <Pane layoutX="339.0" layoutY="329.0" prefHeight="255.0" prefWidth="179.0">
+         <children>
+            <Rectangle fill="WHITE" height="255.0" layoutX="2.0" layoutY="-2.0" stroke="TRANSPARENT" strokeType="INSIDE" width="179.0" />
+            <Button fx:id="draw" layoutX="12.0" layoutY="119.0" mnemonicParsing="false" onAction="#drawButton" prefHeight="28.0" prefWidth="73.0" text="Draw" />
+            <Button fx:id="draw1" layoutX="96.0" layoutY="119.0" mnemonicParsing="false" onAction="#changePlayer" prefHeight="28.0" prefWidth="73.0" text="End Turn" />
+            <Button fx:id="draw21" layoutX="96.0" layoutY="54.0" mnemonicParsing="false" onAction="#start" prefHeight="28.0" prefWidth="73.0" text="Start" />
+            <MenuButton alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Sort">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
